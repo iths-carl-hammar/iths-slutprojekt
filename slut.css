@@ -1,0 +1,338 @@
+
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url('./test.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+    
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: auto;
+    margin: 0;
+   
+
+}
+
+
+
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, fr1 fr1 fr1 fr1));
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header" "main" "footer" ;
+
+    
+}
+
+
+.header{
+    display: flex;
+    grid-area: header;
+    width: 100%;
+    height: 10rem;
+   background: linear-gradient(to bottom, rgba(0,0,0,.9),transparent);
+    background-color: rgb(70, 65, 65);
+    
+    flex-direction: column;
+    text-align: center;
+    
+    justify-content: center;
+    align-self: center;
+   
+    
+}
+
+.main-text  {
+    font-family: 'Chewy', cursive;
+    color: rgb(238, 221, 221);
+    padding: 0;
+    box-shadow:  0 0 0 rgba(235, 229, 229, 0.2);
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    margin:0;
+
+
+
+}
+
+.card-text{
+    font-size: 1rem;
+}
+
+ .text{
+    font-family: 'Rubik Mono One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 1rem;
+    
+}
+.main{
+    display: flex;
+    grid-area: main;
+    width: 100%;
+    height: 45rem;
+    /*background-color: rgb(40, 34, 35);*/
+    background-position: center;
+    flex-direction: column;
+   /* position: relative;*/
+    justify-content: center;
+    
+
+
+}
+.card{
+    display: flex;
+    grid-template: "header" "main" auto / 1fr;
+    box-shadow: 0 0 1em rgba(0,0,0,.5);
+    padding: 1.5em;
+    margin: 3rem;
+     width: 15rem;
+     height: 15rem;
+     transition-duration: 1000ms;
+     transition-property: background transform;
+     transition-timing-function: ease;
+     
+     background-color: white;
+     align-content: space-between;
+     flex-direction: row;
+     justify-content: center;
+    align-self: center;
+    /*position: relative;*/
+    grid-template-columns: repeat(auto-fit, minmax(200px,fr1  fr1));
+    
+   
+}
+.card:hover{
+    background: darkgrey;
+    transform: rotate(45deg);
+}
+
+
+
+.card1{
+    display: flex;
+    
+    box-shadow: 0 0 1em rgba(0,0,0,.5);
+    padding: 1.5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+     width: 15rem;
+     height: 15rem;
+     margin: 0;
+     
+     justify-content: center;
+    align-self: center;
+    
+    background-image: url("./street.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+.link:hover{
+    font-family: 'Chewy', cursive;
+  font-size: larger;
+}
+
+
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+   height: 7rem;
+   background-color: rgb(65, 64, 54);
+   text-align: center;
+   justify-content: center;
+   align-self: center;
+   opacity:0.3 ;
+   margin: 1rem;
+
+}
+.footer:hover{
+    opacity: 1.0;
+}
+nav{
+    
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    background-color: rgba(169,184,191);
+    height: 100vh;
+    width: 80vw;
+    z-index: 2;
+    transition: right 0.25 ease-out;
+}
+
+ .header label{
+    
+    display: flex;
+    
+    
+    cursor: pointer;
+     
+color: antiquewhite;
+padding: 0;
+flex-direction: row-reverse;
+margin: 1rem;
+align-self: baseline;
+font-size: 2rem;
+
+
+
+    
+    
+    
+
+   
+    
+   
+}
+.menu-hidden{
+    right: -100vw;
+}
+.hidden{
+    pointer-events: none;
+    visibility: hidden;
+}
+.fade-layer{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.25;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color:rgba(155,117,53);
+}
+nav a:hover{
+    background-color: rgba(129,117,117);
+}
+/*page2*/
+.mark2{
+    color: white;
+}
+.mark3{
+    color: white;
+    font-size: larger;
+}
+
+.mark1{
+  
+    margin: 1rem;
+
+}
+.link{
+    margin: 1rem;
+}
+.card-text1{
+  
+    margin: 1rem;
+}
+.move{
+    margin: 1rem;
+}
+.crap{
+    color: white;
+}
+
+
+
+
+
+/* ipad*/
+@media(max-width:700px){
+    .wrapper{
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+    .main-text{
+        grid-template-columns: 'header' 'main' 'footer';
+    }
+    .mark1{
+        grid-template-areas: 'main' 'header' 'footer';
+    }
+    
+}
+
+     
+
+ /* Smartphone*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480){
+    body {
+        grid-template-areas: "header" "main" "footer" ;
+    }
+    .wrapper{
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+    .main-text{
+        grid-template-columns: 1fr;
+    }
+    .mark1{
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+  }
+  /* desktop*/
+  @media only screen and (min-device-width: 1224px) {
+    body {
+        grid-template-areas: "header" "main" "footer" ;
+    }
+    .wrapper{
+        grid-template-areas:  "header" "main" "footer";
+    }
+    .mark1{
+        grid-template-areas: "main" 'header' 'footer';
+    }
+  }
+
+
+
+/*
+  .showcase{
+    background-image: url('../nyhetssidan/street.jpeg');
+    height: 50vh;   /* css viewport height vh . */
+   /* background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+
+
+
