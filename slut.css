@@ -165,7 +165,7 @@ body{
     grid-area: footer;
     flex-direction: column;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
    height: 7rem;
    background-color: rgb(65, 64, 54);
    text-align: center;
