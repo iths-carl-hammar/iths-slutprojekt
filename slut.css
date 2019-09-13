@@ -321,6 +321,7 @@ nav a:hover{
         'footer';
     }
     .youtube{
+        grid-template-areas: 'header' 'main' 'footer';
         flex-direction: column;
         justify-content: center;
         align-self: center;
@@ -342,6 +343,7 @@ nav a:hover{
         grid-template-columns: 1fr;
     }
     .youtube{
+        grid-template-areas: "main" 'header' 'footer';
        flex-direction: row;
        justify-content: flex-start;
     }
