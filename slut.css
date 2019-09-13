@@ -139,6 +139,7 @@ body{
     padding: 1.5em;
     flex-direction: column;
     flex-wrap: wrap;
+    
    
      width: 15rem;
      height: 15rem;
@@ -246,14 +247,17 @@ nav a:hover{
 }
 /*page2*/
 .mark2{
+    
     color: white;
 }
 .mark3{
     color: white;
     font-size: larger;
+    margin: 1rem;
 }
 
 .mark1{
+   
   
     margin: 1rem;
 
@@ -268,7 +272,16 @@ nav a:hover{
   
     margin: 1rem;
 }
+.youtube{
+    display: flex;
+    flex-direction: row;
+}
 .move{
+ 
+    margin: 1rem;
+}
+.move1{
+    
     margin: 1rem;
 }
 .crap{
