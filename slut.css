@@ -234,6 +234,12 @@ nav a{
 nav a:hover{
     background-color: rgba(129,117,117);
 }
+.blogg{
+    margin: 1rem;
+}
+.form{
+    margin: 1rem;
+}
 /*page2*/
 .mark2{
     color: white;
