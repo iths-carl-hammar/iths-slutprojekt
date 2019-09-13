@@ -151,6 +151,7 @@ body{
     
 }
 .link:hover{
+   
     font-family: 'Chewy', cursive;
   font-size: larger;
 }
@@ -248,8 +249,11 @@ nav a:hover{
 
 }
 .link{
+    color: aliceblue;
     margin: 1rem;
+    font-size: large;
 }
+
 .card-text1{
   
     margin: 1rem;
@@ -316,6 +320,10 @@ nav a:hover{
     .mark1{
         grid-template-areas: "main" 'header' 'footer';
     }
+    .main-text{
+        grid-template-columns: 1fr;
+    }
+
   }
 
 
