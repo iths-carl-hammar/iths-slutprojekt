@@ -36,6 +36,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(200px, fr1 fr1 fr1 fr1));
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header" "main" "footer" ;
+    
 
     
 }
