@@ -13,9 +13,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(1rem);
+    font-family: 'Rubik Mono One', sans-serif;
     
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
     height: auto;
     margin: 0;
    
@@ -196,7 +197,7 @@ nav{
     
     display: flex;
     
-    
+  
     cursor: pointer;
      
 color: antiquewhite;
@@ -258,7 +259,7 @@ nav a:hover{
 
 .mark1{
    
-  
+  width: 100%;
     margin: 1rem;
 
 }
@@ -274,7 +275,10 @@ nav a:hover{
 }
 .youtube{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    width: 100%;
+   
+    
 }
 .move{
  
@@ -316,6 +320,12 @@ nav a:hover{
         'main'
         'footer';
     }
+    .youtube{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    
   }
   /* desktop*/
   @media only screen and (min-device-width: 1224px) {
@@ -331,7 +341,11 @@ nav a:hover{
     .main-text{
         grid-template-columns: 1fr;
     }
-
+    .youtube{
+       flex-direction: row;
+       justify-content: flex-start;
+    }
+    
   }
 
 
