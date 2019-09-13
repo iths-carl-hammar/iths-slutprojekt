@@ -269,22 +269,7 @@ nav a:hover{
 
 
 
-/* ipad*/
-@media(max-width:700px){
-    .wrapper{
-        grid-template-areas:
-        'header'
-        'main'
-        'footer';
-    }
-    .main-text{
-        grid-template-columns: 'header' 'main' 'footer';
-    }
-    .mark1{
-        grid-template-areas: 'main' 'header' 'footer';
-    }
-    
-}
+
 
      
 
