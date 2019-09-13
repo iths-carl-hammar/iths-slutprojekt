@@ -33,6 +33,7 @@ body{
     grid-template-columns: 1fr  ;
     grid-template-columns: 1fr ;
     grid-template-columns: 1fr;
+   
     
     grid-template-columns: repeat(auto-fit, minmax(200px, fr1 fr1 fr1 fr1));
     grid-template-rows: repeat(3, auto);
@@ -277,7 +278,7 @@ nav a:hover{
 }
 .youtube{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
    
    
     
