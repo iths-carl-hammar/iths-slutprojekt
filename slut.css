@@ -237,6 +237,7 @@ nav a:hover{
     background-color: rgba(129,117,117);
 }
 .blogg{
+    font-family: 'Rubik Mono One', sans-serif;
     margin: 1rem;
 }
 .form{
