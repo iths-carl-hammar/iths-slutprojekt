@@ -13,7 +13,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: drop-shadow(16px 16px 20px red) invert(75%);
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fugaz One', cursive;
     
     
     
@@ -84,7 +84,7 @@ body{
 }
 
  .text{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fugaz One', cursive;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     font-weight: 100;
@@ -277,7 +277,7 @@ nav a:hover{
     background-color: rgba(129,117,117);
 }
 .blogg{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fugaz One', cursive;
     margin: 1rem;
 }
 .form{
@@ -285,6 +285,8 @@ nav a:hover{
 }
 /*page2*/
 .mark2{
+    font-family: 'Fugaz One', cursive;
+
      font-size: x-large;
     color: rgb(21, 19, 19);
 }
@@ -293,7 +295,8 @@ nav a:hover{
     font-size: x-large;
     margin: 1rem;
     font-weight: 100;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fugaz One', cursive;
+
     
    
     
@@ -316,6 +319,8 @@ nav a:hover{
    
 }
 .test{
+    font-family: 'Fugaz One', cursive;
+
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
