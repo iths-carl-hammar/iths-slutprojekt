@@ -158,11 +158,38 @@ body{
     
     
 }
+/*
 .link:hover{
    
     font-family: 'Chewy', cursive;
   font-size: larger;
 }
+*/
+.link {
+    cursor: pointer;
+   margin: 1rem;
+   text-decoration: none;
+   color:whitesmoke;
+   transition: 0.2s;
+   display: inline-block;
+   overflow: hidden;
+
+
+    
+}
+.link:hover{
+    background: #2196f3;
+    color:#255784;
+    box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
+   
+
+
+
+}
+
+
+
+
 
 
 
@@ -266,11 +293,7 @@ nav a:hover{
     margin: 1rem;
 
 }
-.link{
-    color: aliceblue;
-    margin: 1rem;
-    font-size: large;
-}
+
 
 .card-text1{
   
