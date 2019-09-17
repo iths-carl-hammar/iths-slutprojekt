@@ -333,6 +333,7 @@ nav a:hover{
     margin: 1rem;
 }
 .youtube{
+    margin: auto;
     display: flex;
     flex-direction: row;
    
@@ -348,6 +349,7 @@ nav a:hover{
     margin: 1rem;
 }
 .crap{
+    margin: auto;
     color: white;
 }
 
@@ -379,12 +381,7 @@ nav a:hover{
         'main'
         'footer';
     }
-    .youtube{
-       
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-    }
+    
     
   }
   /* desktop*/
@@ -401,11 +398,7 @@ nav a:hover{
     .main-text{
         grid-template-columns: 1fr;
     }
-    .youtube{
-        
-       flex-direction: row;
-       justify-content: flex-start;
-    }
+    
     
   }
 
