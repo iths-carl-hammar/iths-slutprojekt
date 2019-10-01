@@ -288,6 +288,10 @@ nav a:hover{
     margin: 1rem;
 }
 /*page2*/
+.main-page2-text{
+    background-color: white;
+    box-shadow: 0 0 1em rgba(0,0,0,.5);
+}
 .mark2{
     font-family: 'Fugaz One', cursive;
 
@@ -390,6 +394,10 @@ nav a:hover{
         'header'
         'main'
         'footer';
+    }
+    .youtube {
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
     
     
