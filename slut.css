@@ -286,6 +286,11 @@ nav a:hover{
 }
 .form{
     margin: 1rem;
+    box-shadow: 0 0 3em rgba(128, 119, 119, 0.2);
+}
+.input{
+    border: 0.1em solid black;
+    display: flex;
 }
 /*page2*/
 .main-page2-text{
@@ -350,6 +355,7 @@ nav a:hover{
     margin: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
    
    
     
@@ -397,7 +403,7 @@ nav a:hover{
     }
     .youtube {
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
     
     
