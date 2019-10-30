@@ -101,6 +101,7 @@ body{
     display: flex;
     grid-area: main;
     width: 100%;
+    background-image: url("./space.jpg");
     
     /*background-color: rgb(40, 34, 35);*/
     background-position: center;
