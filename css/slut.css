@@ -101,12 +101,13 @@ body{
     display: flex;
     grid-area: main;
     width: 100%;
-    background-image: url("../iss.jpg");
+    background: url("/bilder/iss.jpg") no-repeat center center fixed; 
+    background-size: cover;
     
-    /*background-color: rgb(40, 34, 35);*/
+    
     background-position: center;
     flex-direction: column;
-    /* position: relative;*/
+    
     justify-content: center;
     
     
@@ -131,7 +132,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    /*position: relative;*/
+    
     grid-template-columns: repeat(auto-fit, minmax(200px,fr1  fr1));
     
     
@@ -165,13 +166,7 @@ body{
     
     
 }
-/*
-.link:hover{
-    
-    font-family: 'Chewy', cursive;
-    font-size: larger;
-}
-*/
+
 .link {
     cursor: pointer;
     margin: 1rem;
@@ -211,7 +206,7 @@ body{
     grid-area: footer;
     flex-direction: column;
     width: 100%;
-    /*position: relative;*/
+    
     
     background-color: rgb(65, 64, 54);
     text-align: center;
