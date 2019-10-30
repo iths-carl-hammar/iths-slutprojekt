@@ -13,15 +13,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: drop-shadow(16px 16px 20px red) invert(75%);
-    font-family: 'Fugaz One', cursive;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     
     
     
-   
-
+    
+    
     margin: 0;
-   
-
+    
+    
 }
 
 
@@ -34,14 +34,14 @@ body{
     grid-template-columns: 1fr  ;
     grid-template-columns: 1fr ;
     grid-template-columns: 1fr;
-   
+    
     
     grid-template-columns: repeat(auto-fit, minmax(200px, fr1 fr1 fr1 fr1));
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header" "main" "footer" ;
     overflow: hidden;
     
-
+    
     
 }
 
@@ -50,21 +50,21 @@ body{
     display: flex;
     grid-area: header;
     width: 100%;
-
-   background: linear-gradient(to bottom, rgba(0,0,0,.9),transparent);
-    background-color: rgb(70, 65, 65);
+    
+    background: linear-gradient(to bottom, rgba(171, 184, 228, 0.9),transparent);
+    background-color: rgb(16, 18, 31);
     
     flex-direction: column;
     text-align: center;
     
     justify-content: center;
     align-self: center;
-   
+    
     
 }
 
 .main-text  {
-    font-family: 'Rock Salt', cursive;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     color: rgb(238, 229, 229);
     padding: 0;
     box-shadow:  0 0 0 rgba(128, 119, 119, 0.2);
@@ -73,26 +73,27 @@ body{
     font-weight: 100;
     margin:0;
     letter-spacing: 1px;
-
     
-
-
-
+    
+    
+    
+    
 }
 
 .card-text{
     font-size: 1rem;
     width: 10rem;
-
+    
 }
 
- .text{
-    font-family: 'Fugaz One', cursive;
+.text{
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     font-weight: 100;
     font-size: 1rem;
-
+    color:white;
+    
     margin: 1rem;
     
 }
@@ -100,17 +101,17 @@ body{
     display: flex;
     grid-area: main;
     width: 100%;
-
+    
     /*background-color: rgb(40, 34, 35);*/
     background-position: center;
     flex-direction: column;
-   /* position: relative;*/
+    /* position: relative;*/
     justify-content: center;
     
     
     
-
-
+    
+    
 }
 .card{
     display: flex;
@@ -118,21 +119,21 @@ body{
     box-shadow: 0 0 1em rgba(0,0,0,.5);
     padding: 1.5em;
     margin: 3rem;
-     width: 15rem;
-
-     transition-duration: 1000ms;
-     transition-property: background transform;
-     transition-timing-function: ease;
-     
-     background-color: white;
-     align-content: space-between;
-     flex-direction: row;
-     justify-content: center;
+    width: 15rem;
+    
+    transition-duration: 1000ms;
+    transition-property: background transform;
+    transition-timing-function: ease;
+    
+    background-color: white;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-self: center;
     /*position: relative;*/
     grid-template-columns: repeat(auto-fit, minmax(200px,fr1  fr1));
     
-   
+    
 }
 .card:hover{
     background: darkgrey;
@@ -149,12 +150,12 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     
-   
-     width: 15rem;
-
-     margin: 0;
-     
-     justify-content: center;
+    
+    width: 15rem;
+    
+    margin: 0;
+    
+    justify-content: center;
     align-self: center;
     
     background-image: url("./street.jpeg");
@@ -165,37 +166,37 @@ body{
 }
 /*
 .link:hover{
-   
+    
     font-family: 'Chewy', cursive;
-  font-size: larger;
+    font-size: larger;
 }
 */
 .link {
     cursor: pointer;
-   margin: 1rem;
-   text-decoration: none;
-   color:rgb(0, 0, 0);
-   transition: 0.2s;
-   display: inline-block;
-   overflow: hidden;
-   font-size: 1rem;
-   margin: auto;
-   padding: 1px;
-   
-   
-  
-
-
+    margin: 1rem;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition: 0.2s;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1px;
+    
+    
+    
+    
+    
     
 }
 .link:hover{
     background: #2196f3;
     color:#255784;
     box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
-   
-
-
-
+    
+    
+    
+    
 }
 
 
@@ -210,14 +211,14 @@ body{
     flex-direction: column;
     width: 100%;
     /*position: relative;*/
-
-   background-color: rgb(65, 64, 54);
-   text-align: center;
-   justify-content: center;
-   align-self: center;
-   opacity:0.3 ;
-   margin: 1rem;
-
+    
+    background-color: rgb(65, 64, 54);
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    opacity:0.3 ;
+    margin: 1rem;
+    
 }
 .footer:hover{
     opacity: 1.0;
@@ -228,35 +229,35 @@ nav{
     position: fixed;
     right: 0;
     background-color: rgba(169,184,191);
-
+    
     width: 80vw;
     z-index: 2;
     transition: right 0.25 ease-out;
 }
 
- .header label{
+.header label{
     
     display: flex;
     
-  
+    
     cursor: pointer;
-     
-color: antiquewhite;
-padding: 0;
-flex-direction: row-reverse;
-margin: 1rem;
-align-self: baseline;
-font-size: 2rem;
-
-
-
+    
+    color: antiquewhite;
+    padding: 0;
+    flex-direction: row-reverse;
+    margin: 1rem;
+    align-self: baseline;
+    font-size: 2rem;
     
     
     
-
-   
     
-   
+    
+    
+    
+    
+    
+    
 }
 .menu-hidden{
     right: -100vw;
@@ -267,7 +268,7 @@ font-size: 2rem;
 }
 .fade-layer{
     position: fixed;
-
+    
     width: 100vw;
     background-color: black;
     opacity: 0.25;
@@ -299,8 +300,8 @@ nav a:hover{
 }
 .mark2{
     font-family: 'Fugaz One', cursive;
-
-     font-size: x-large;
+    
+    font-size: x-large;
     color: rgb(21, 19, 19);
 }
 .mark3{
@@ -310,9 +311,9 @@ nav a:hover{
     font-weight: 100;
     font-family: 'Fugaz One', cursive;
     
-
     
-   
+    
+    
     
 }
 .link1{
@@ -324,31 +325,31 @@ nav a:hover{
     display: inline-block;
     overflow: hidden;
     font-size: 1rem;
- 
+    
 }
 .link1:hover{
     background: #2196f3;
     color:#255784;
     box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
-   
+    
 }
 .test{
     font-family: 'Fugaz One', cursive;
-
+    
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
 
 .mark1{
-   
-  width: 100%;
+    
+    width: 100%;
     margin: 1rem;
-
+    
 }
 
 
 .card-text1{
-  
+    
     margin: 1rem;
 }
 .youtube{
@@ -356,12 +357,12 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
-   
+    
+    
     
 }
 .move{
- 
+    
     margin: 1rem;
 }
 .move1{
@@ -379,9 +380,9 @@ nav a:hover{
 
 
 
-     
 
- /* Smartphone*/
+
+/* Smartphone*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480){
     body {
         grid-template-areas: "header" "main" "footer" ;
@@ -407,9 +408,9 @@ nav a:hover{
     }
     
     
-  }
-  /* desktop*/
-  @media only screen and (min-device-width: 1224px) {
+}
+/* desktop*/
+@media only screen and (min-device-width: 1224px) {
     body {
         grid-template-areas: "header" "main" "footer" ;
     }
@@ -424,17 +425,17 @@ nav a:hover{
     }
     
     
-  }
+}
 
 
 
 /*
-  .showcase{
+.showcase{
     background-image: url('../nyhetssidan/street.jpeg');
-
-   /* background-size: cover;
+    
+    /* background-size: cover;
     background-position: center;
-
+    
 }
 
 
