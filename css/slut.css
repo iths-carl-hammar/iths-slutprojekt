@@ -160,7 +160,7 @@ body{
     justify-content: center;
     align-self: center;
     
-    background-image: url("./street.jpeg");
+    
     background-repeat: no-repeat;
     background-position: center;
     
@@ -231,7 +231,7 @@ nav{
     transition: right 0.25 ease-out;
 }
 
-.header label{
+.header i {
     
     display: flex;
     
