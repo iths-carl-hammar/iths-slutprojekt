@@ -255,63 +255,12 @@ nav{
     
     
 }
-.menu-hidden{
-    right: -100vw;
-}
-.hidden{
-    pointer-events: none;
-    visibility: hidden;
-}
-.fade-layer{
-    position: fixed;
-    
-    width: 100vw;
-    background-color: black;
-    opacity: 0.25;
-    z-index: 1;
-}
-nav a{
-    text-decoration: none;
-    color:rgba(155,117,53);
-}
+
 nav a:hover{
     background-color: rgba(129,117,117);
 }
-.blogg{
-    font-family: 'Fugaz One', cursive;
-    margin: 1rem;
-}
-.form{
-    margin: 1rem;
-    box-shadow: 0 0 3em rgba(128, 119, 119, 0.2);
-}
-.input{
-    border: 0.1em solid black;
-    display: flex;
-}
-/*page2*/
-.main-page2-text{
-    background-color: white;
-    box-shadow: 0 0 1em rgba(0,0,0,.5);
-}
-.mark2{
-    font-family: 'Fugaz One', cursive;
-    
-    font-size: x-large;
-    color: rgb(21, 19, 19);
-}
-.mark3{
-    color: rgb(0, 0, 0);
-    font-size: x-large;
-    margin: 1rem;
-    font-weight: 100;
-    font-family: 'Fugaz One', cursive;
-    
-    
-    
-    
-    
-}
+
+
 .link1{
     cursor: pointer;
     margin: 1rem;
@@ -329,6 +278,12 @@ nav a:hover{
     box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
     
 }
+
+
+
+
+/*page2*/
+
 .test{
     font-family: 'Fugaz One', cursive;
     
@@ -336,27 +291,14 @@ nav a:hover{
     font-size: 25px;
 }
 
-.mark1{
-    
-    width: 100%;
-    margin: 1rem;
-    
-}
+
 
 
 .card-text1{
     
     margin: 1rem;
 }
-.youtube{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    
-    
-}
+
 .move{
     
     margin: 1rem;
