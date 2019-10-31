@@ -9,15 +9,15 @@ let myIcon = L.icon({
 
 let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
 
-function onMap(e){
-    popup
-    .setLatLng(e.setLatLng)
-    .openOn(mymap)
+function onMap(){
+    
+    marker.bindPopup("<b> Kalle e fan cool!</b>").openPopup();
+    
     
     
 };
+
 marker.on("mouseover",onMap);
-marker.bindPopup("<b> Hello!</b>").openPopup();
 
 
 
@@ -37,28 +37,26 @@ let api_url = 'https://api.wheretheiss.at/v1/satellites/25544'
 async function getISS(){
     let response = await fetch(api_url) // hämnta data
     let data = await response.json();
-    let { latitude, longitude} = data 
+    let { latitude, longitude,daynum, } = data 
     
     // L.marker add  to mymap
-    marker.setLatLng([latitude,longitude]);
+    marker.setLatLng([latitude,longitude,daynum,  ]);
     
     
     if(firstTime){
-        mymap.setView([latitude,longitude, 2]);
+        mymap.setView([latitude,longitude,2]);
         firstTime = false;
     }
     
     let lon =  document.querySelector(".lon").textContent = longitude;
     let lat =   document.querySelector(".lat").textContent = latitude;
+    let day =   document.querySelector(".day").textContent = daynum;
     
 }
 getISS();
-// setInterval(getISS, 1000);
+ //setInterval(getISS, 1000);
 
-// let asto = document.querySelector(".fas fa-user-astronaut").addEventListener("click",bild);
-function bild (){
-    
-}
+
 
 
 
