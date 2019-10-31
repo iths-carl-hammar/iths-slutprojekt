@@ -21,19 +21,19 @@ async function getISS(){
     let response = await fetch(api_url) // hämnta data
     let data = await response.json();
     let { latitude, longitude} = data 
-
+    
     // L.marker add  to mymap
     marker.setLatLng([latitude,longitude]);
     if(firstTime){
         mymap.setView([latitude,longitude, 2]);
         firstTime = false;
     }
-
-    document.getElementById("lon").textContent = longitude;
-    document.getElementById("lat").textContent = latitude;
+    
+    let lon =  document.querySelector(".lon").textContent = longitude;
+  let lat =   document.querySelector(".lat").textContent = latitude;
 }
 getISS();
-setInterval(getISS, 1000);
+//setInterval(getISS, 1000);
 
 
 /*
