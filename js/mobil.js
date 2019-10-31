@@ -7,8 +7,25 @@ let myIcon = L.icon({
     popupAnchor: [-3,-76],
 });
 
-let marker = L.marker([0,0], {icon: myIcon} ).addTo(mymap);
+let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
+
+function onMap(e){
+    popup
+    .setLatLng(e.setLatLng)
+    .openOn(mymap)
+    
+    
+};
+marker.on("mouseover",onMap);
 marker.bindPopup("<b> Hello!</b>").openPopup();
+
+
+
+
+
+
+
+
 let attribution = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 let tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
@@ -24,16 +41,26 @@ async function getISS(){
     
     // L.marker add  to mymap
     marker.setLatLng([latitude,longitude]);
+    
+    
     if(firstTime){
         mymap.setView([latitude,longitude, 2]);
         firstTime = false;
     }
     
     let lon =  document.querySelector(".lon").textContent = longitude;
-  let lat =   document.querySelector(".lat").textContent = latitude;
+    let lat =   document.querySelector(".lat").textContent = latitude;
+    
 }
 getISS();
-//setInterval(getISS, 1000);
+// setInterval(getISS, 1000);
+
+// let asto = document.querySelector(".fas fa-user-astronaut").addEventListener("click",bild);
+function bild (){
+    
+}
+
+
 
 
 /*
