@@ -11,7 +11,7 @@ let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
 
 function onMap(){
     
-    marker.bindPopup("<b> Kalle e fan cool!</b>").openPopup();
+    marker.bindPopup("<b> kalle is fan cool</b>").openPopup();
     
     
     
