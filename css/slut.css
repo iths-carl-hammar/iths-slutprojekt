@@ -69,8 +69,8 @@ body{
     
 }
 
-.main-text  {
-    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+.animated  {
+    font-family: 'Roboto', sans-serif;
     color: rgb(238, 229, 229);
     padding: 0;
     box-shadow:  0 0 0 rgba(128, 119, 119, 0.2);
@@ -79,6 +79,8 @@ body{
     font-weight: 100;
     margin:0;
     letter-spacing: 1px;
+    animation-duration: 3s;
+    animation-delay: 1s;
     
     
     
@@ -250,6 +252,7 @@ body{
     
     
     
+    
 }
 
 nav a:hover{
@@ -301,16 +304,22 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image:  linear-gradient(to bottom right, rgb(61, 80, 131), rgba(165, 168, 200, 0.26));
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
     margin-top: -1rem;
     height: 10rem;
     
+    
+    
+}
+.header-page2:hover{
+    background-color: navy;
 }
 .h1{
     font-family: 'Titillium Web', sans-serif;
     letter-spacing:0.1rem;
     margin: 0;
     text-align: center;
+    color:black;
     
     
     
@@ -320,7 +329,9 @@ nav a:hover{
     text-decoration: none;
 }
 .link5:hover {
-    background-color: yellow;
+    background-color: rgb(24, 13, 87);
+    transition: all 0.3 ease;
+    transform: scale(1.1);
 }
 .section{
     display: flex;
@@ -341,12 +352,13 @@ nav a:hover{
 .nasa-info1 {
     height: 315px;
     width: 25rem;
-    background-color: rgba(70, 79, 206, 0.787);
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
 }
 .nasa-info2{
     height: 315px;
     width: 28rem;
-    background-color: rgba(70, 79, 206, 0.787);
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+    
 }
 .Please{ 
     text-transform: capitalize;
@@ -357,6 +369,39 @@ nav a:hover{
 .Tv{
     padding: 2rem;
     margin: 1rem;
+}
+
+.ulspace{
+    list-style-type:none;
+    margin: 0;
+    padding: 0.5;
+}
+.fa-user-astronaut{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+    
+}
+.fa-rocket{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+}
+.fa-satellite{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+}
+.spaceinfo{
+    margin: 33px;
+    padding: 9px;
+    
 }
 
 
@@ -388,14 +433,25 @@ nav a:hover{
         'footer';
     }
     .header-page2{
+        display: flex;
         flex-wrap:wrap;
-        grid-template-areas: "header" ;
+        
+        
+        
+        
+        
+        
         
         
     }
-    
-    
-    
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nasa{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
 /* desktop*/
